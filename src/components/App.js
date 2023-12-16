@@ -1,5 +1,5 @@
 //libs
-import React from 'react';
+import React, { useState } from 'react';
 //components
 import Header from './Header';
 import Route from './Route';
@@ -9,8 +9,14 @@ import Explorer from './pages/Explorer';
 import AtlasSearch from './pages/AtlasSearch';
 import ThemeSearch from './pages/ThemeSearch';
 import KeywordSearch from './pages/KeywordSearch';
+import Sources from './pages/Sources';
 
 const App = () => {
+  //state management
+  const [dir, setDir] = useState('');
+  const upSource = (path) => {
+    setDir(path);
+  };
   return (
     <div className='app-container'>
       <Header />
@@ -21,13 +27,16 @@ const App = () => {
         <Explorer />
       </Route>
       <Route path='/explorer/atlas-search'>
-        <AtlasSearch />
+        <AtlasSearch upSource={upSource} />
       </Route>
       <Route path='/explorer/theme-search'>
         <ThemeSearch />
       </Route>
       <Route path='/explorer/keyword-search'>
-        <KeywordSearch />
+        <KeywordSearch upSource={upSource} />
+      </Route>
+      <Route path='/sources'>
+        <Sources dir={dir} />
       </Route>
     </div>
   );

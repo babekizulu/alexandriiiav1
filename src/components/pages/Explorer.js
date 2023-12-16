@@ -2,10 +2,12 @@
 import React from 'react';
 //components
 import Link from '../Link';
+import BackBtn from '../buttons/BackBtn';
 
 const Explorer = () => {
   return (
     <div className='explorer page'>
+      <BackBtn prevDir='/' />
       <div className='explorer-grid'>
         <Link href='/explorer/atlas-search' className='explorer-item'>
           <header>

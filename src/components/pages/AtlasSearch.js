@@ -1,18 +1,26 @@
 //libs
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //components
+import BackBtn from '../buttons/BackBtn';
 import Atlas from '../Atlas';
 import TimeDial from '../TimeDial';
 import DataCard from '../DataCard';
 
-const AtlasSearch = () => {
+const AtlasSearch = ({ upSource }) => {
   //state management
-  const [setSelectedContinent, selectedContinent] = useState('Africa');
-  const [setDataTitle, dataTitle] = useState('');
-  const [setDataDescription, dataDescription] = useState('');
-  const [setDataModelImg, dataModelImg] = useState('');
+  const [selectedContinent, setSelectedContinent] = useState('Africa');
+  const [dataTitle, setDataTitle] = useState('');
+  const [dataDescription, setDataDescription] = useState('');
+  const [dataModelImg, setDataModelImg] = useState('');
+  //variables
+  const currentPage = '/explorer/atlas-search';
+  //life cycle methods
+  useEffect(() => {
+    upSource(currentPage);
+  }, []);
   return (
     <div className='atlas-search page'>
+      <BackBtn prevDir='/explorer' />
       <Atlas />
       <div className='selected-continent-name-container'>
         <header className='selected-continent-name'>
