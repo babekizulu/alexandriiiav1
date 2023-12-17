@@ -1,0 +1,6 @@
+satellite_id,satellite_name,research_objectives,mission_successes,mission_failures
+SATID0,Sputnik,"Temperature Measurement, Atmospheric Pressure Measurement","Temperature Measurement, Atmospheric Pressure Measurement",
+SATID1,Sputnik 2,"Solar Radiation Research, Cosmic Ray Research, Effects of Space Travel on Living Creatures","Solar Radiation Research, Cosmic Ray Research",Effects of Space Travel on Living Creatures
+SATID2,Explorer,Cosmic Ray Research,"Launch Success, Reaches orbit successfully",
+SATID3,Explorer 2,,Launch Success,"Stage 4 Engine Failure, Failed to reach orbit"
+SATID4,Pioneer 4,,,

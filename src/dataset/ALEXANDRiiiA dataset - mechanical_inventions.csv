@@ -1,0 +1,40 @@
+invention_id,date_invented _bce,date_invented_ad,ancient,modern,invention_name,invention_type,dimensions,iteration,iteration_of,materials,inventor,research_groups,education,model,model_image,multi_regional,regions,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page_references,,,,,,,,,,,,,,,,,,
+IID0,null,null,TRUE,FALSE,Manioc Squeezer,null,null,null,null,null,null,null,null,null,null,null,South America,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID1,null,null,TRUE,FALSE,Boomerang,null,null,null,null,null,null,null,null,null,null,null,Australia,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID2,null,null,TRUE,FALSE,Toggle Joint Harpoon,null,null,null,null,null,null,null,null,null,null,null,null,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID3,285,null,TRUE,FALSE,Water Clock,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID4,null,null,TRUE,FALSE,Crossbow,null,null,null,null,null,null,null,null,null,null,TRUE,"Far East, Mediterranean",null,C23A1,p.20,null,null,,,,,,,,,,,,,,,,,,
+IID5,285,null,TRUE,FALSE,Force Pump,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID6,285,null,TRUE,FALSE,Hydraulic Pipe Organ,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID7,285,null,TRUE,FALSE,Musical Keyboard,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID8,285,null,TRUE,FALSE,Metal Spring,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID9,270,null,TRUE,FALSE,Singing Cornucopia,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID10,1250,null,TRUE,FALSE,Safety Pin,null,null,null,null,null,null,null,null,null,null,null,null,null,C23A1,p.25,null,null,,,,,,,,,,,,,,,,,,
+IID11,null,null,TRUE,FALSE,Central Indirect House Heating,null,null,null,null,null,Sergius Orata,null,null,null,null,FALSE,Ancient Rome,null,null,p.25,null,null,,,,,,,,,,,,,,,,,,null
+IID12,null,null,FALSE,TRUE,Steam Engine,null,null,null,null,null,James Watt,null,null,null,null,null,null,null,null,p.27,null,null,,,,,,,,,,,,,,,,,,null
+IID13,null,1884,FALSE,TRUE,Line Divider,null,null,null,null,null,Hertha Ayrton,null,Cambridge University,null,null,FALSE,The United Kingdom,null,C23A2,p.1,null,null,,,,,,,,,,,,,,,,,,null
+IID14,null,null,FALSE,TRUE,Anti-gas Fan,null,null,null,null,null,Hertha Ayrton,null,Cambridge University,null,null,FALSE,The United Kingdom,null,C23A2,p.2,null,null,,,,,,,,,,,,,,,,,,null
+IID15,null,null,FALSE,TRUE,R.A.E Restriction,null,null,null,null,null,Beatrice Shilling,null,The University of Manchester,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID16,null,null,FALSE,TRUE,Engine Valves,null,null,null,null,null,Verena Holmes,null, Loughborough Technical College,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID17,null,null,FALSE,TRUE,Medical Support Devices,null,null,null,null,null,Verena Holmes,null, Loughborough Technical College,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID18,null,null,FALSE,TRUE,IBM 701 Scientific Computer,null,null,null,null,null,null,IBM,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID19,null,null,FALSE,TRUE,Magnetophon,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID20,null,null,FALSE,TRUE,Gyroscope,null,null,FALSE,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID21,null,null,FALSE,TRUE,Electric Motor Powered Gyroscope,Aeronautics Apparatus,null,TRUE,Gyroscope,"Aluminum, Steel",null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID22,null,null,FALSE,TRUE,Corporal Missile (Without Altitude Control),Aeronautics,null,FALSE,null,null,null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID23,null,null,FALSE,TRUE,Corporal Missile,Aeronautics,null,TRUE,"Corporal Missile (Without Altitude Control), V-2 Rocket",null,null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID24,null,null,FALSE,TRUE,Sergeant Missile,Aeronautics,null,FALSE,null,null,null,null,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID25,null,null,FALSE,TRUE,Vergeltungswaffe Zwei (V-2),Aeronautics,null,null,null,null,null,null,null,null,null,null,Germany,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID26,null,null,FALSE,TRUE,Redstone Rocket,Aeronautics,null,null,null,null,null,Redstone Arsenal,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID27,null,null,FALSE,TRUE,Microlock Tracking System,Aeronautics Apparatus,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID28,null,null,FALSE,TRUE,Graphing Paper,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID29,null,null,FALSE,TRUE,Friden Calculator,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,2,C23A3,p.29,P23A44,null,,,,,,,,,,,,,,,,,,null
+IID30,null,null,FALSE,TRUE,Teletype,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID31,null,null,FALSE,TRUE,Sputnik,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID32,null,null,FALSE,TRUE,Sputnik 2,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID33,null,null,FALSE,TRUE,Explorer,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID34,null,null,FALSE,TRUE,Programming Punch Card,Computing Apparatus,"Length: 7.5 inches, Width: 3.25 inches",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID35,null,null,FALSE,TRUE,A-0 Compiler,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID36,null,null,FALSE,TRUE,A-2 Compiler,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID37,null,null,FALSE,TRUE,Jet Engine,Engines,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.20,null,null,,,,,,,,,,,,,,,,,,
+IID38,null,null,FALSE,TRUE,Slide Rule,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.31,null,null,,,,,,,,,,,,,,,,,,

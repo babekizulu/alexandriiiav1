@@ -1,0 +1,9 @@
+scientist_id,scientist_name,gender,ethnicity,lifetime,occupations,institutions,regions,notable_achievements,research,education,model,model_image,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+SCID0,Eleanor Frances Helin,Female,American,1932 - 2009,Scientist,Jet Propulsion Laboratory,The United States of America,Astronomy Award,Near-Earth Asteroid Tracking,null,null,null,1,C23A3,p.7,null,null
+SCID1,Richard Feynman,Male,American,null,Physicist,null,The United States of America,null,null,null,null,null,1,C23A3,p.10,null,null
+SCID2,Weld Arnold,null,American,null,Astrophysicist,"Guggenheim Aeronautical Laboratory at the California Institute of Technology, Jet Propulsion Laboratory",The United States of America,null,Jet-Assisted Takeoff,California Institute of Technology,null,null,1,C23A3,p.18,null,null
+SCID3,August Piccard,null,Swiss,null,Physicist,null,Switzerland,null,Compressed Air Aluminium Sphere,*,null,null,null,C23A4,null,null,null
+SCID4,Lois Labee,Female,American,null,Chemist,"Guggenheim Aeronautical Laboratory at the California Institute of Technology, Jet Propulsion Laboratory",The United States of America,,,,,,,,,,
+SCID5,Marie Crowley,Female,American,null,"Data Scientist, Mathematician, Computer, Chemical Engineer","Guggenheim Aeronautical Laboratory at the California Institute of Technology, Jet Propulsion Laboratory, Aerojet-Rocketdyne",The United States of America,,,,,,,,,,
+SCID6,H. Julian Allen,,American,,,Ames Research Center,The United States of America,,Rocket Nose Cone Design,,,,,,,,
+SCID7,James van Allen,Male,American,,Astrophysicist,The University of Iowa,The United States of America,,Cosmic Rays,,,,,,,,

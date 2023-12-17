@@ -1,0 +1,3 @@
+airplane_id,airplane_name,materials,developers,date_developed,region,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+AIRPID0,Ercoupe,aluminum,null,null,null,1,C23A3,p.23,null,null
+AIRPID1,Douglas A-20A,null,null,null,null,1,C23A3,p.25,null,null

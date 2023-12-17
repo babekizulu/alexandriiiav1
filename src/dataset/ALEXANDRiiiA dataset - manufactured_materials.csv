@@ -1,0 +1,6 @@
+material_id,date_developed,raw_materials,material_name,material_application,material_durability,model,model_image,multi-regional,regions,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+MID0,null,Papyrus Reed,Papyrus Paper,Writing,null,null,null,null,Egypt,null,C23A1,p.21,null,null
+MID1,null,Clay,Clay Tablets,Writing,null,null,null,null,Mesopotamia,null,C23A1,p.21,null,null
+MID2,null,Palm Fronds,Palm Frond Paper,Writing,null,null,null,null,India,null,C23A1,p.21,null,null
+MID3,null,Bamboo,Bamboo Paper,Writing,null,null,null,null,China,null,C23A1,p.21,null,null
+MID4,null,Clay,Clay Token,Store of Value,null,null,null,null,Mesopotamia,null,C23A1,p.21,null,null

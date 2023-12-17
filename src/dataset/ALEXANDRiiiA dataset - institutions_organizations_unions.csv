@@ -1,0 +1,16 @@
+group_id,group_name,institution,organization,union,year_established,founders,multi_regional,regions,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+GID0,Women's Engineering Society,FALSE,TRUE,FALSE,1919 - present,"Lady Katharine Parsons, Lady Margaret Moir",FALSE,The United Kingdom,null,C23A2,p.1,P23A1,p.1
+GID1,The Institution of Electrical Engineers,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,C23A2,p.2,P23A1,p.2
+GID2,The Institution of Mechanical Engineers,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null
+GID3,The Institution of Naval Architects,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,null,null,P23A1,p.2
+GID4,North East Coast Institution of Engineers and Shipbuilders,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,null,null,P23A1,p.2
+GID5,The Royal Aeronautical Society,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,null,null,P23A1,p.10
+GID6,The Society of Technical Engineers,TRUE,FALSE,FALSE,null,null,FALSE,The United Kingdom,null,null,null,P23A1,p.10
+GID7,National Aeronautics and Space Administration,TRUE,FALSE,FALSE,1958,null,FALSE,The United States of America,null,C23A3,null,null,null
+GID8,Jet Propulsion Laboratory,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,null,C23A3,null,null,null
+GID9,Guggenheim Aeronautical Laboratory at the California Institute of Technology,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,1,C23A3,p.15-17,null,null
+GID10,Works Progress Administration,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,1,C23A3,p.18,null,null
+GID11,Ames Research Center,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,null,null,null,null,null
+GID12,Redstone Arsenal / Army Ballistic Missile Agency,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,null,null,null,null,null
+GID13,National Academy of Sciences,TRUE,FALSE,FALSE,null,null,FALSE,The United States of America,1,C23A3,p.17,null,null
+GID14,Scientific Advisory Group,TRUE,FALSE,FALSE,1944,Theodore von Karman,FALSE,The United States of America,1,C23A3,p.27-28,null,null

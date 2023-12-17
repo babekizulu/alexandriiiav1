@@ -1,0 +1,9 @@
+rocket_id,rocket_name,research_name,rocket_nickname,rocket_payload,iteration,iteration_of,height,diameter,thrust,single_stage,multi_stage,num_of_stages,research_group,developers,development_period,launch_date,launch_time,region,shared_component,shared_component_developer,shared_component_developer_region,multi_regional,model_image,model_cdn_link
+RID0,Vergeltungswaffe Zwei (V-2),,,Missile,,,,,,,,,,,,,,Germany,,,,,,
+RID1,Corporal (Without Altitude Control),,Little Sister,Missile,,,,,,,,,JPL,"JPL, Firestone",,,,The United States of America,,,,FALSE,,
+RID2,Corporal,,Bumper WAC,Missile,TRUE,"Corporal (Without Altitude Control), Vergeltungswaffe Zwei (V-2)",,,,,,,JPL,"JPL, Firestone",,,,"The United States of America, Germany",Vergeltungswaffe Zwei (V-2),,Germany,TRUE,,
+RID3,Sergeant,,,Missile,,,34 ft.,,,,,,JPL,,,,,The United States of America,,,,FALSE,,
+RID4,Viking,Project Vanguard,,,,,,,,FALSE,TRUE,,United States Navy,,,,,,,,,,,
+RID5,Jupiter-C RS-27,Project Orbiter,,Missile,TRUE,Redstone,,,,FALSE,TRUE,4,"JPL, Redstone Arsenal / Army Ballistic Missile Agency","JPL, Redstone Arsenal / Army Ballistic Missile Agency",,"September 20, 1956",1:45 AM,,,,,,,
+RID6,Juno,,,,TRUE,Jupiter-C RS-27,,,,,,,,,,,,,,,,,,
+RID7,Sputnik,,,Satellite,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,4 @@
+compiler_id,compiler_name,developer,date_invented,date_released,purpose,region,model_image,model_cdn_link,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+CMPLID0,A-0 Compiler,,,1952,Translating Mathematics to Computer Code,,,,,,,
+CMPLID1,A-2 Compiler,,,,,,,,,,,
+CMPLID2,Cargo,,,,Compiles Rust to C++,,,,,,,

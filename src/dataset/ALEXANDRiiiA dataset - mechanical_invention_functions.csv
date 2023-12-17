@@ -1,0 +1,3 @@
+invention_function_id,invention,invention_function,source_ids,source_page_references,primary_source_ids,primary_source_page_references
+IFUNCID0,Jet-Engine,"When molecules go from high pressure to low pressure, we can use them to generate thrust. (Update definition upon further reading on Jet Engine History)",C23A3,p.20,null,null
+IFUNCID1,Rocket Engine,"Combines fuel with an oxidizer to facilitate combustions at high altitudes where air-breathing jet-engines can't work, since there is no oxygen. If you bring your own oxygen with you, in a tank, we can facilitate combustion in a vacuum. (Update upon more research on the history of rocket engines)",C23A3,p.21,null,null

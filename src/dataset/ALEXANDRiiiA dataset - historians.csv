@@ -1,0 +1,3 @@
+historian_id,historian_name,gender,occupations,lifetime,regions,model,model_image,num_of_corroborative_sources,source_ids,source_page_references,primary_source_ids,primary_source_page references
+HID0,Herodotos,null,Historian,null,Ancient Greece,null,null,null,C23A1,p.29-36,null,null
+HID1,Manetho,null,"Historian, Egyptian Priest",null,Ancient Greece,null,null,null,C23A1,p.30,P23A2,null
