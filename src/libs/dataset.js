@@ -5,7 +5,7 @@ ALEXANDRiiiA DATASET
 @date: 2023/12/17
 @TODO: IID7-IID37
 */
-class MechanicalInventions {
+class MechanicalInvention {
   constructor(
     inventionId,
     dateInventedBC,
@@ -98,206 +98,100 @@ class MechanicalInventions {
 /*
     @primaryKey: inventionId
     @format: IID(number)
+    @desc: We need to iterate over all  37 entries and create a new instance 
+    for each entry
 */
-const IID0 = new MechanicalInventions(
-  '',
-  '',
-  true,
-  false,
-  'Manioc Squeezer',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ['South America'],
-  '',
-  ['C23A1'],
-  ['p.15'],
-  '',
-  '',
-);
-const IID1 = new MechanicalInventions(
-  '',
-  '',
-  true,
-  false,
-  'Boomerang',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ['Australia'],
-  '',
-  ['C23A1'],
-  ['p.15'],
-  '',
-  '',
-);
-const IID2 = new MechanicalInventions(
-  '',
-  '',
-  true,
-  false,
-  'Toggle Joint Harpoon',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  [''],
-  '',
-  ['C23A1'],
-  ['p.15'],
-  [''],
-  [''],
-);
-const IID3 = new MechanicalInventions(
-  285,
-  '',
-  true,
-  false,
-  'Water Clock',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ['Ktesibios'],
-  '',
-  '',
-  '',
-  '',
-  false,
-  ['Ancient Alexandria'],
-  '',
-  ['C23A1'],
-  ['p.138'],
-  [''],
-  [''],
-);
-const IID4 = new MechanicalInventions(
-  '',
-  '',
-  true,
-  false,
-  'Crossbow',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  true,
-  ['Far East, Mediterranean'],
-  '',
-  ['C23A1'],
-  ['p.20'],
-  '',
-  '',
-);
-const IID5 = new MechanicalInventions(
-  285,
-  null,
-  true,
-  false,
-  'Force Pump',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ['Ktesibios'],
-  '',
-  '',
-  '',
-  '',
-  false,
-  ['Ancient Alexandria'],
-  '',
-  ['C23A1'],
-  ['p.137'],
-  '',
-  '',
-);
-const IID6 = new MechanicalInventions(
-  285,
-  '',
-  true,
-  false,
-  'Hydraulic Pipe Organ',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ['Ktesibios'],
-  '',
-  '',
-  '',
-  '',
-  false,
-  ['Ancient Alexandria'],
-  '',
-  ['C23A1'],
-  ['p.137'],
-  '',
-  '',
-);
-const IID7 = new MechanicalInventions();
-const IID8 = new MechanicalInventions();
-const IID9 = new MechanicalInventions();
-const IID10 = new MechanicalInventions();
-const IID11 = new MechanicalInventions();
-const IID12 = new MechanicalInventions();
-const IID13 = new MechanicalInventions();
-const IID14 = new MechanicalInventions();
-const IID15 = new MechanicalInventions();
-const IID16 = new MechanicalInventions();
-const IID17 = new MechanicalInventions();
-const IID18 = new MechanicalInventions();
-const IID19 = new MechanicalInventions();
-const IID20 = new MechanicalInventions();
-const IID21 = new MechanicalInventions();
-const IID22 = new MechanicalInventions();
-const IID23 = new MechanicalInventions();
-const IID24 = new MechanicalInventions();
-const IID25 = new MechanicalInventions();
-const IID26 = new MechanicalInventions();
-const IID27 = new MechanicalInventions();
-const IID28 = new MechanicalInventions();
-const IID29 = new MechanicalInventions();
-const IID30 = new MechanicalInventions();
-const IID31 = new MechanicalInventions();
-const IID32 = new MechanicalInventions();
-const IID33 = new MechanicalInventions();
-const IID34 = new MechanicalInventions();
-const IID35 = new MechanicalInventions();
-const IID36 = new MechanicalInventions();
-const IID37 = new MechanicalInventions();
+
+const csvRawData = `IID0,null,null,TRUE,FALSE,Manioc Squeezer,null,null,null,null,null,null,null,null,null,null,null,South America,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID1,null,null,TRUE,FALSE,Boomerang,null,null,null,null,null,null,null,null,null,null,null,Australia,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID2,null,null,TRUE,FALSE,Toggle Joint Harpoon,null,null,null,null,null,null,null,null,null,null,null,null,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+IID3,285,null,TRUE,FALSE,Water Clock,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID4,null,null,TRUE,FALSE,Crossbow,null,null,null,null,null,null,null,null,null,null,TRUE,"Far East, Mediterranean",null,C23A1,p.20,null,null,,,,,,,,,,,,,,,,,,
+IID5,285,null,TRUE,FALSE,Force Pump,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID6,285,null,TRUE,FALSE,Hydraulic Pipe Organ,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID7,285,null,TRUE,FALSE,Musical Keyboard,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID8,285,null,TRUE,FALSE,Metal Spring,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
+IID9,270,null,TRUE,FALSE,Singing Cornucopia,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.137,null,null,,,,,,,,,,,,,,,,,,
+IID10,1250,null,TRUE,FALSE,Safety Pin,null,null,null,null,null,null,null,null,null,null,null,null,null,C23A1,p.25,null,null,,,,,,,,,,,,,,,,,,
+IID11,null,null,TRUE,FALSE,Central Indirect House Heating,null,null,null,null,null,Sergius Orata,null,null,null,null,FALSE,Ancient Rome,null,null,p.25,null,null,,,,,,,,,,,,,,,,,,null
+IID12,null,null,FALSE,TRUE,Steam Engine,null,null,null,null,null,James Watt,null,null,null,null,null,null,null,null,p.27,null,null,,,,,,,,,,,,,,,,,,null
+IID13,null,1884,FALSE,TRUE,Line Divider,null,null,null,null,null,Hertha Ayrton,null,Cambridge University,null,null,FALSE,The United Kingdom,null,C23A2,p.1,null,null,,,,,,,,,,,,,,,,,,null
+IID14,null,null,FALSE,TRUE,Anti-gas Fan,null,null,null,null,null,Hertha Ayrton,null,Cambridge University,null,null,FALSE,The United Kingdom,null,C23A2,p.2,null,null,,,,,,,,,,,,,,,,,,null
+IID15,null,null,FALSE,TRUE,R.A.E Restriction,null,null,null,null,null,Beatrice Shilling,null,The University of Manchester,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID16,null,null,FALSE,TRUE,Engine Valves,null,null,null,null,null,Verena Holmes,null, Loughborough Technical College,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID17,null,null,FALSE,TRUE,Medical Support Devices,null,null,null,null,null,Verena Holmes,null, Loughborough Technical College,null,null,FALSE,The United Kingdom,null,C23A2,p.3,null,null,,,,,,,,,,,,,,,,,,null
+IID18,null,null,FALSE,TRUE,IBM 701 Scientific Computer,null,null,null,null,null,null,IBM,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID19,null,null,FALSE,TRUE,Magnetophon,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID20,null,null,FALSE,TRUE,Gyroscope,null,null,FALSE,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID21,null,null,FALSE,TRUE,Electric Motor Powered Gyroscope,Aeronautics Apparatus,null,TRUE,Gyroscope,"Aluminum, Steel",null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID22,null,null,FALSE,TRUE,Corporal Missile (Without Altitude Control),Aeronautics,null,FALSE,null,null,null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID23,null,null,FALSE,TRUE,Corporal Missile,Aeronautics,null,TRUE,"Corporal Missile (Without Altitude Control), V-2 Rocket",null,null,JPL,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID24,null,null,FALSE,TRUE,Sergeant Missile,Aeronautics,null,FALSE,null,null,null,null,null,null,null,null,The United States of America,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID25,null,null,FALSE,TRUE,Vergeltungswaffe Zwei (V-2),Aeronautics,null,null,null,null,null,null,null,null,null,null,Germany,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID26,null,null,FALSE,TRUE,Redstone Rocket,Aeronautics,null,null,null,null,null,Redstone Arsenal,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID27,null,null,FALSE,TRUE,Microlock Tracking System,Aeronautics Apparatus,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID28,null,null,FALSE,TRUE,Graphing Paper,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID29,null,null,FALSE,TRUE,Friden Calculator,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,2,C23A3,p.29,P23A44,null,,,,,,,,,,,,,,,,,,null
+IID30,null,null,FALSE,TRUE,Teletype,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID31,null,null,FALSE,TRUE,Sputnik,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID32,null,null,FALSE,TRUE,Sputnik 2,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID33,null,null,FALSE,TRUE,Explorer,Satellites,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID34,null,null,FALSE,TRUE,Programming Punch Card,Computing Apparatus,"Length: 7.5 inches, Width: 3.25 inches",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,null
+IID35,null,null,FALSE,TRUE,A-0 Compiler,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID36,null,null,FALSE,TRUE,A-2 Compiler,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
+IID37,null,null,FALSE,TRUE,Jet Engine,Engines,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.20,null,null,,,,,,,,,,,,,,,,,,
+IID38,null,null,FALSE,TRUE,Slide Rule,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.31,null,null,,,,,,,,,,,,,,,,,,`;
+const csvRawArr = csvRawData.split(',');
+const strPattern = 'IID';
+const strPattern2 = '\n';
+const regex = new RegExp(strPattern);
+const regex2 = new RegExp(strPattern2);
+let csvArr = [];
+//22 columns per row
+for (let i = 0; i < csvRawArr.length; i++) {
+  //if the loop reaches the primary key string 'IID{number}'
+  // then take the primary key and the next 22 values, and push them into
+  // a new array
+  if (regex.test(csvRawArr[i])) {
+    csvArr.push(csvRawArr.splice(i, 23));
+  }
+}
+console.log(csvArr);
+for (let i = 0; i < csvArr.length; i++) {
+  csvArr[i].splice(0, 1);
+}
+console.log(csvArr);
+const mechanicalInventions = {};
+let objArr = [];
+for (let i = 0; i < 37; i++) {
+  const obj = new MechanicalInvention(
+    csvArr[i][0],
+    csvArr[i][1],
+    csvArr[i][2],
+    csvArr[i][3],
+    csvArr[i][4],
+    csvArr[i][5],
+    csvArr[i][6],
+    csvArr[i][7],
+    csvArr[i][8],
+    csvArr[i][9],
+    csvArr[i][10],
+    csvArr[i][11],
+    csvArr[i][12],
+    csvArr[i][13],
+    csvArr[i][14],
+    csvArr[i][15],
+    csvArr[i][16],
+    csvArr[i][17],
+    csvArr[i][18],
+    csvArr[i][19],
+    csvArr[i][20],
+    csvArr[i][21],
+    csvArr[i][22],
+  );
+  mechanicalInventions[`IID${i}`] = obj;
+}
+console.log(mechanicalInventions);
 
 class MathematicalApparatus {
   //
