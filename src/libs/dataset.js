@@ -3,11 +3,22 @@ ALEXANDRiiiA DATASET
 @desc: The ALEXANDRiiiA dataset converted into objects, for use in the app
 @author: Lwandle Babekizulu Dlamini
 @date: 2023/12/17
-@TODO: IID7-IID37
+*/
+
+/*
+@desc: Class Constructor that creates Mechanical Invention objects, with the table 
+headers/keys as property names. Also contains search functions to iterate through the 
+the mechanicalInventions object and find values, so the goal is to 
+find the most efficient search algorithm for this particular table
+***IMPORTANT***
+- When updating, add all values excluding headers/keys from CSV file into 
+the mechanicalInventionsRawData string, and the loops will clean up the string 
+and do the rest. The only parameter that needs to be updated is the number of columns 
+in each row, which is stored in the mechanicalInventionsColumns constant.
+@date: 2023/12/19
 */
 class MechanicalInvention {
   constructor(
-    inventionId,
     dateInventedBC,
     dateInventedAD,
     ancient,
@@ -30,7 +41,6 @@ class MechanicalInvention {
     primarySourceIds,
     primarySourcePageReferences,
   ) {
-    this.inventionId = inventionId;
     this.dateInventedBC = dateInventedBC; //integer
     this.dateInventedAD = dateInventedAD; //integer
     this.ancient = ancient; //boolean
@@ -54,7 +64,7 @@ class MechanicalInvention {
     this.primarySourcePageReferences = primarySourcePageReferences; //array
   }
   //search by id
-  searchById = (inventionId) => {
+  searchById = () => {
     //
   };
   //search by date invented
@@ -98,11 +108,32 @@ class MechanicalInvention {
 /*
     @primaryKey: inventionId
     @format: IID(number)
-    @desc: We need to iterate over all  37 entries and create a new instance 
-    for each entry
+    @desc: Iterates over csv raw data string and performs the following operations: 
+    - Splits the string into an array, and splits at every comma ',' 
+    - Declares an ID pattern to determine where each row begins
+    - Creates a new Regex instance to evaluate the current item 
+      in the mechanicalInventionsSplit array, and if the current item
+      in the loop passes the Regex test, proceeds to the next step
+    - Declares an empty mechanical inventions array to store spliced values 
+    - Performs for loop mentioned before
+    - When if() conditon is met, then splices the first element of the 
+    mechanicalInventionsSplit array, which is the Row ID (IID in the dataset)
+    - splices off every element from the current element to the last element in 
+    the row of data represented by the mechanicalInventionsColumns constant, 
+    and pushes it to a new array, which is the mechanicalInventionsArr
+    - Declares an empty mechanicalInventions object 
+    - Loops for the number of rows in the table, and the value is stored in the 
+    mechanicalInventionsRows consant, which can be updated everytime more rows 
+    are added to the table
+    - Appends mechanicalInventions object with a new instance 
+    of a mechanical invention, with its own unique ID
+    and populates each parameter of the MechanicalInvention constructor 
+    with each element of the mechancal inventions array
 */
 
-const csvRawData = `IID0,null,null,TRUE,FALSE,Manioc Squeezer,null,null,null,null,null,null,null,null,null,null,null,South America,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
+//@updatable: true
+// - copy and paste all csv data excluding headers/keys
+const mechanicalInventionsRawData = `IID0,null,null,TRUE,FALSE,Manioc Squeezer,null,null,null,null,null,null,null,null,null,null,null,South America,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
 IID1,null,null,TRUE,FALSE,Boomerang,null,null,null,null,null,null,null,null,null,null,null,Australia,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
 IID2,null,null,TRUE,FALSE,Toggle Joint Harpoon,null,null,null,null,null,null,null,null,null,null,null,null,null,C23A1,p.15,null,null,,,,,,,,,,,,,,,,,,
 IID3,285,null,TRUE,FALSE,Water Clock,null,null,null,null,null,Ktesibios (Ctesibius),null,null,null,null,FALSE,Ancient Alexandria,null,C23A1,p.138,null,null,,,,,,,,,,,,,,,,,,
@@ -141,61 +172,160 @@ IID35,null,null,FALSE,TRUE,A-0 Compiler,null,null,null,null,null,null,null,null,
 IID36,null,null,FALSE,TRUE,A-2 Compiler,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,,,,,,,,,,,,,,,,,,
 IID37,null,null,FALSE,TRUE,Jet Engine,Engines,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.20,null,null,,,,,,,,,,,,,,,,,,
 IID38,null,null,FALSE,TRUE,Slide Rule,Mathematical Apparatus,null,null,null,null,null,null,null,null,null,null,null,1,C23A3,p.31,null,null,,,,,,,,,,,,,,,,,,`;
-const csvRawArr = csvRawData.split(',');
-const strPattern = 'IID';
-const strPattern2 = '\n';
-const regex = new RegExp(strPattern);
-const regex2 = new RegExp(strPattern2);
-let csvArr = [];
+//@updatable: true
+const mechanicalInventionsColumns = 22;
+const mechanicalInventionsRows = 37;
+//@updatable: false **don't change
+const mechanicalInventionDataSplit = mechanicalInventionsRawData.split(',');
+const mechanicalInventionIDPattern = 'IID';
+const mechanicalInventionRegex = new RegExp(mechanicalInventionIDPattern);
+let mechanicalInventionsArr = [];
 //22 columns per row
-for (let i = 0; i < csvRawArr.length; i++) {
+for (let i = 0; i < mechanicalInventionDataSplit.length; i++) {
   //if the loop reaches the primary key string 'IID{number}'
   // then take the primary key and the next 22 values, and push them into
   // a new array
-  if (regex.test(csvRawArr[i])) {
-    csvArr.push(csvRawArr.splice(i, 23));
+  if (mechanicalInventionRegex.test(mechanicalInventionDataSplit[i])) {
+    mechanicalInventionsArr.splice(i, 1);
+    mechanicalInventionsArr.push(
+      mechanicalInventionDataSplit.splice(i + 1, mechanicalInventionsColumns),
+    );
   }
 }
-console.log(csvArr);
-for (let i = 0; i < csvArr.length; i++) {
-  csvArr[i].splice(0, 1);
-}
-console.log(csvArr);
 const mechanicalInventions = {};
-let objArr = [];
-for (let i = 0; i < 37; i++) {
+for (let i = 0; i < mechanicalInventionsRows; i++) {
   const obj = new MechanicalInvention(
-    csvArr[i][0],
-    csvArr[i][1],
-    csvArr[i][2],
-    csvArr[i][3],
-    csvArr[i][4],
-    csvArr[i][5],
-    csvArr[i][6],
-    csvArr[i][7],
-    csvArr[i][8],
-    csvArr[i][9],
-    csvArr[i][10],
-    csvArr[i][11],
-    csvArr[i][12],
-    csvArr[i][13],
-    csvArr[i][14],
-    csvArr[i][15],
-    csvArr[i][16],
-    csvArr[i][17],
-    csvArr[i][18],
-    csvArr[i][19],
-    csvArr[i][20],
-    csvArr[i][21],
-    csvArr[i][22],
+    mechanicalInventionsArr[i][0],
+    mechanicalInventionsArr[i][1],
+    mechanicalInventionsArr[i][2],
+    mechanicalInventionsArr[i][3],
+    mechanicalInventionsArr[i][4],
+    mechanicalInventionsArr[i][5],
+    mechanicalInventionsArr[i][6],
+    mechanicalInventionsArr[i][7],
+    mechanicalInventionsArr[i][8],
+    mechanicalInventionsArr[i][9],
+    mechanicalInventionsArr[i][10],
+    mechanicalInventionsArr[i][11],
+    mechanicalInventionsArr[i][12],
+    mechanicalInventionsArr[i][13],
+    mechanicalInventionsArr[i][14],
+    mechanicalInventionsArr[i][15],
+    mechanicalInventionsArr[i][16],
+    mechanicalInventionsArr[i][17],
+    mechanicalInventionsArr[i][18],
+    mechanicalInventionsArr[i][19],
+    mechanicalInventionsArr[i][20],
+    mechanicalInventionsArr[i][21],
+    mechanicalInventionsArr[i][22],
   );
   mechanicalInventions[`IID${i}`] = obj;
 }
 console.log(mechanicalInventions);
 
+/*
+@desc: Class Constructor that creates Mathematical Apparatus objects, with the table 
+headers/keys as property names. Also contains search functions to iterate through the 
+the mathematicalApparatus object and find values, so the goal is to 
+find the most efficient search algorithm for this particular table
+***IMPORTANT***
+- When updating, add all values excluding headers/keys from CSV file into 
+the mathematicalApparatusRawData string, and the loops will clean up the string 
+and do the rest. The only parameter that needs to be updated is the number of columns 
+in each row, which is stored in the mathematicalApparatusColumns constant.
+@date: 2023/12/19
+*/
 class MathematicalApparatus {
-  //
+  constructor(
+    apparatusName,
+    dateInvented,
+    apparatusFunction,
+    inventor,
+    region,
+    modelImage,
+    modelCDNLink,
+    sourceIds,
+    sourcePageReferences,
+    primarySourceIds,
+    primarySourcePageReferences,
+  ) {
+    this.apparatusName = apparatusName;
+    this.dateInvented = dateInvented;
+    this.apparatusFunction = apparatusFunction;
+    this.inventor = inventor;
+    this.region = region;
+    this.modelImage = modelImage;
+    this.modelCDNLink = modelCDNLink;
+    this.sourceIds = sourceIds;
+    this.sourcePageReferences = sourcePageReferences;
+    this.primarySourceIds = primarySourceIds;
+    this.primarySourcePageReferences = primarySourcePageReferences;
+  }
 }
+
+/*
+    @date: 2023/12/19
+    @primaryKey: Mathematical Apparatus ID
+    @format: IID(number)
+    @desc: Iterates over csv raw data string and performs the following operations: 
+    - Splits the string into an array, and splits at every comma ',' 
+    - Declares an ID pattern to determine where each row begins
+    - Creates a new Regex instance to evaluate the current item 
+      in the mathematicalApparatusSplit array, and if the current item
+      in the loop passes the Regex test, proceeds to the next step
+    - Declares an empty mathematical apparatus array to store spliced values 
+    - Performs for loop mentioned before
+    - When if() conditon is met, then splices the first element of the 
+    mathematicalApparatusSplit array, which is the Row ID (MAPPID in the dataset)
+    - splices off every element from the current element to the last element in 
+    the row of data, and pushes it to a new array, which is the mathematicalApparatusArr
+    - Declares an empty mathematicalApparatus object 
+    - Loops for the number of rows in the table, and the value is stored in the 
+    mathematicalApparatusRows consant, which can be updated everytime more rows 
+    are added to the table
+    - Appends mathematical apparatus object with a new instance 
+    of a mathematical apparatus, with its own unique ID
+    and populates each parameter of the MathematicalApparatus constructor 
+    with each element of the mathematical apparatus array
+*/
+const mathematicalApparatusColumns = 11;
+const mathematicalApparatusRows = 2;
+//@updatable: true
+// - copy and paste all csv data excluding headers/keys
+const mathematicalApparatusRawData = `
+MAPPID0,Friden Calculator,null,"Performing mathematical calculations. Performs addition, subtraction, multiplication and division",null,null,null,null,C23A3,p.29,P23A44,null
+MAPPID1,Slide Rule,null,"Performing mathematical calculations. Performs multiplication, division, square-roots, trigonometry",null,null,null,null,C23A3,p.31,null,null
+`;
+const mathematicalApparatusSplit = mathematicalApparatusRawData.split(',');
+const mathIdPattern = 'MAPPID';
+const mathIdRegex = new RegExp(mathIdPattern);
+let mathematicalApparatusArr = [];
+for (let i = 0; i < mathematicalApparatusSplit.length; i++) {
+  if (mathIdRegex.test(mathematicalApparatusSplit[i])) {
+    mathematicalApparatusSplit.splice(i, 1);
+    mathematicalApparatusArr.push(
+      mathematicalApparatusSplit.splice(i + 1, mathematicalApparatusColumns),
+    );
+  }
+}
+const mathematicalApparatus = {};
+for (let i = 0; i < mathematicalApparatusRows; i++) {
+  mathematicalApparatus[`${mathIdPattern}${i}`] = new MathematicalApparatus(
+    mathematicalApparatusArr[i][0],
+    mathematicalApparatusArr[i][1],
+    mathematicalApparatusArr[i][2],
+    mathematicalApparatusArr[i][3],
+    mathematicalApparatusArr[i][4],
+    mathematicalApparatusArr[i][5],
+    mathematicalApparatusArr[i][6],
+    mathematicalApparatusArr[i][7],
+    mathematicalApparatusArr[i][8],
+    mathematicalApparatusArr[i][9],
+    mathematicalApparatusArr[i][10],
+  );
+}
+
+console.log(mathematicalApparatus);
 
 class Rockets {
   //
