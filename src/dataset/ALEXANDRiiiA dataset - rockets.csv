@@ -1,9 +1,9 @@
 rocket_id,rocket_name,research_name,rocket_nickname,rocket_payload,iteration,iteration_of,height,diameter,thrust,single_stage,multi_stage,num_of_stages,research_group,developers,development_period,launch_date,launch_time,region,shared_component,shared_component_developer,shared_component_developer_region,multi_regional,model_image,model_cdn_link
-RID0,Vergeltungswaffe Zwei (V-2),,,Missile,,,,,,,,,,,,,,Germany,,,,,,
-RID1,Corporal (Without Altitude Control),,Little Sister,Missile,,,,,,,,,JPL,"JPL, Firestone",,,,The United States of America,,,,FALSE,,
-RID2,Corporal,,Bumper WAC,Missile,TRUE,"Corporal (Without Altitude Control), Vergeltungswaffe Zwei (V-2)",,,,,,,JPL,"JPL, Firestone",,,,"The United States of America, Germany",Vergeltungswaffe Zwei (V-2),,Germany,TRUE,,
-RID3,Sergeant,,,Missile,,,34 ft.,,,,,,JPL,,,,,The United States of America,,,,FALSE,,
-RID4,Viking,Project Vanguard,,,,,,,,FALSE,TRUE,,United States Navy,,,,,,,,,,,
-RID5,Jupiter-C RS-27,Project Orbiter,,Missile,TRUE,Redstone,,,,FALSE,TRUE,4,"JPL, Redstone Arsenal / Army Ballistic Missile Agency","JPL, Redstone Arsenal / Army Ballistic Missile Agency",,"September 20, 1956",1:45 AM,,,,,,,
-RID6,Juno,,,,TRUE,Jupiter-C RS-27,,,,,,,,,,,,,,,,,,
-RID7,Sputnik,,,Satellite,,,,,,,,,,,,,,,,,,,,
+RID0,Vergeltungswaffe Zwei (V-2),null,null,Missile,null,null,null,null,null,null,null,null,null,null,null,null,null,Germany,null,null,null,null,null,null
+RID1,Corporal (Without Altitude Control),null,Little Sister,Missile,null,null,null,null,null,null,null,null,JPL,"JPL, Firestone",null,null,null,The United States of America,null,null,null,FALSE,null,null
+RID2,Corporal,null,Bumper WAC,Missile,TRUE,"Corporal (Without Altitude Control), Vergeltungswaffe Zwei (V-2)",null,null,null,null,null,null,JPL,"JPL, Firestone",null,null,null,"The United States of America, Germany",Vergeltungswaffe Zwei (V-2),null,Germany,TRUE,null,null
+RID3,Sergeant,null,null,Missile,null,null,34 ft.,null,null,null,null,null,JPL,null,null,null,null,The United States of America,null,null,null,FALSE,null,null
+RID4,Viking,Project Vanguard,null,,null,null,null,null,null,FALSE,TRUE,null,United States Navy,null,null,null,null,null,null,null,null,null,null,null
+RID5,Jupiter-C RS-27,Project Orbiter,null,Missile,TRUE,Redstone,null,null,null,FALSE,TRUE,4,"JPL, Redstone Arsenal / Army Ballistic Missile Agency","JPL, Redstone Arsenal / Army Ballistic Missile Agency",null,"September 20, 1956",1:45 AM,null,null,null,null,null,null,null
+RID6,Juno,null,null,,TRUE,Jupiter-C RS-27,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+RID7,Sputnik,null,null,Satellite,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
