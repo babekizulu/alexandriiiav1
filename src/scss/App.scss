@@ -1,0 +1,44 @@
+@import 'utils';
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include wh100;
+    background: $dark-active;
+}
+
+.app-container {
+    @include wh100;
+    @include grid1;
+}
+
+.center-line {
+    background: $light-alpha;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    z-index: 5;
+}
+
+@import 'Header';
+@import 'Home';
+@import 'Explorer';
+@import 'Sources';
+@import 'Help';
+@import 'Buttons';
+@import 'Atlas';
+@import 'TimeDial';
+@import 'DataCard';
+@import 'SearchBar';
+@import 'SearchBar';

@@ -1,0 +1,126 @@
+@import 'utils';
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 62px;
+    background: $dark;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.audiiio-widget {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        list-style: none;
+    }
+    li {
+        text-decoration: none;
+        color: $light;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 18px;
+    }
+}
+
+.play-btn {
+    @include centerFlex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $light;
+    transition: $eio;
+    cursor: pointer;
+    &:hover {
+        background: $light-active;
+        transition: $eio;
+    }
+}
+
+.play-svg {
+    @include centerFlex;
+    margin-bottom: 2px;
+    margin-left: 1px;
+}
+
+.config-btn-container {
+    @include centerFlex;
+}
+
+.config-btn {
+    @include centerFlex;
+    text-decoration: none;
+    color: $dark;
+    background: $light;
+    padding: 6px 18px;
+    border-radius: 18px;
+    transition: $eio;
+    &:hover {
+        background: $light-active;
+        color: $dark-active;
+        transition: $eio;
+    }
+}
+
+.volume-slider-container {
+    @include centerFlex;
+}
+
+.slider-knob {
+    background: $light;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    z-index: 2;
+    margin-left: 9px;
+}
+
+.slide-meter {
+    background: $light;
+    width: 90px;
+    height: 3px;
+    border-radius: 18px;
+    z-index: 1;
+    margin-right: 9px;
+}
+
+.logo-container {
+    @include centerFlex;
+}
+
+.logo-svg {
+    @include centerFlex;
+    margin-right: 180px;
+}
+
+.help-btn {
+    @include centerFlex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $light;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $dark;
+    margin-right: 18px;
+    transition: $eio;
+    cursor: pointer;
+    &:hover {
+        background: $light-active;
+        transition: $eio;
+    }
+}

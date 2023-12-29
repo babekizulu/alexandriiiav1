@@ -1,8 +1,26 @@
 //libs
-import React from 'react';
+import React, { useState } from 'react';
+//components
+import PlaySVG from '../PlaySVG';
 
 const PlayBtn = () => {
-  return <div className='play-btn-container'>Play Button</div>;
+  const [hover, setHover] = useState(false);
+  //handlers
+  const hoverHandler = () => {
+    setHover(true);
+  };
+  const unHoverHandler = () => {
+    setHover(false);
+  };
+  return (
+    <div
+      className='play-btn'
+      onMouseEnter={hoverHandler}
+      onMouseLeave={unHoverHandler}
+    >
+      <PlaySVG hover={hover} />
+    </div>
+  );
 };
 
 export default PlayBtn;

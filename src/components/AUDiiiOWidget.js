@@ -9,10 +9,20 @@ import VolumeSlider from './buttons/VolumeSlider';
 const AUDiiiOWidget = () => {
   return (
     <div className='audiiio-widget'>
-      <PlayBtn />
-      <ToggleSlider />
-      <ConfigBtn />
-      <VolumeSlider />
+      <ul>
+        <li>
+          <PlayBtn />
+        </li>
+        <li>
+          <ToggleSlider />
+        </li>
+        <li>
+          <ConfigBtn />
+        </li>
+        <li>
+          <VolumeSlider />
+        </li>
+      </ul>
     </div>
   );
 };

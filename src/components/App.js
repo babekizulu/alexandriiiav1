@@ -10,6 +10,8 @@ import AtlasSearch from './pages/AtlasSearch';
 import ThemeSearch from './pages/ThemeSearch';
 import KeywordSearch from './pages/KeywordSearch';
 import Sources from './pages/Sources';
+//styling
+import '../scss/App.scss';
 
 const App = () => {
   //state management

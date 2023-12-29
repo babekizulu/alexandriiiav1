@@ -1,0 +1,24 @@
+@import 'utils';
+.toggle-slider {
+    width: 27px;
+    height: 12px;
+    border-radius: 27px;
+    background: $dark;
+}
+
+.toggle-knob,
+.inactive-toggle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $dark-active;
+}
+
+.toggle-knob,
+.active-toggle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $dark-active;
+    transform: translateX(12px);
+}

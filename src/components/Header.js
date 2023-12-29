@@ -8,7 +8,7 @@ import HelpBtn from './buttons/HelpBtn';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header-container'>
       <AUDiiiOWidget />
       <Logo />
       <ToggleSlider />
