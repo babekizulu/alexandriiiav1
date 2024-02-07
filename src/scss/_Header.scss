@@ -85,8 +85,9 @@
     width: 27px;
     height: 27px;
     border-radius: 50%;
+    position: relative;
+    left: 20px;
     z-index: 2;
-    margin-left: 9px;
     background: $light;
     cursor: pointer;
     &:hover {

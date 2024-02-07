@@ -3,7 +3,7 @@ import React from 'react';
 //components
 import ExploreBtn from '../buttons/ExploreBtn';
 
-const Home = () => {
+const Home = ({ volume }) => {
   return (
     <div className='home page'>
       <div className='page-header-container'>
