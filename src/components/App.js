@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Route from './Route';
 //pages
-import Home from './pages/Home';
-import Explorer from './pages/Explorer';
-import AtlasSearch from './pages/AtlasSearch';
-import ThemeSearch from './pages/ThemeSearch';
-import GeoSearch from './pages/GeoSearch';
+import Home from './pages/home/Home';
+import Explorer from './pages/explorer/Explorer';
+import AtlasSearch from './pages/atlas_search/AtlasSearch';
+import ThemeSearch from './pages/theme_search/ThemeSearch';
+import GeoSearch from './pages/geo_search/GeoSearch';
 import Sources from './pages/Sources';
 //styling
 import '../scss/App.scss';

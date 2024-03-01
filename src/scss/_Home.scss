@@ -4,3 +4,34 @@
     top: 62px;
     color: $light;
 }
+
+.hero-container {
+    @include centerFlex;
+    margin: 36px auto 36px auto;
+    font-family: $poppins;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: $light;
+    letter-spacing: 4px;
+}
+
+.explore-btn-container {
+    @include centerFlex;
+}
+
+.explore-btn {
+    background: $light;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: $poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $dark;
+    cursor: pointer;
+    transition: $eio;
+    &:hover {
+        transition: $eio;
+        background: $light-active;
+    }
+}

@@ -38,8 +38,8 @@
 
 .play-btn {
     @include centerFlex;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: $light;
     transition: $eio;
@@ -64,14 +64,13 @@
     @include centerFlex;
     text-decoration: none;
     color: $dark;
-    font-family: $poppins;
+    font-family: $rob;
     background: $light;
     padding: 6px 18px;
     border-radius: 18px;
     transition: $eio;
     &:hover {
         background: $light-active;
-        color: $dark-active;
         transition: $eio;
     }
 }
@@ -104,6 +103,10 @@
     margin-right: 9px;
 }
 
+.volume-level {
+    font-family: $rob;
+}
+
 .logo-container {
     @include centerFlex;
 }
@@ -115,8 +118,8 @@
 
 .help-btn {
     @include centerFlex;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: $light;
     font-family: $rob;

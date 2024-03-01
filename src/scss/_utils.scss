@@ -18,23 +18,25 @@
 
 @mixin grid2 {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 @mixin grid3 {
     display: grid;
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 //colors
 $light: #f5f5f5;
-$light-alpha: #f5f5f57e;
+$light-alpha: #f5f5f550;
 $light-active: #c2c2c2;
 $dark: #131313;
 $dark-active: #333333;
 $orange: #ffbb38;
 $red: #ff5959;
 $blue: #8cd6ff;
+$dark-blue: #00a6ff;
+$dark-red: #a10000;
 //transitions
 $e: all 0.2s ease;
 $ei: all 0.2s ease-in;

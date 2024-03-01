@@ -5,8 +5,8 @@ const PlaySVG = ({ hover }) => {
   return (
     <div className='play-svg'>
       <svg
-        width='38'
-        height='38'
+        width='23'
+        height='23'
         viewBox='0 0 42 42'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

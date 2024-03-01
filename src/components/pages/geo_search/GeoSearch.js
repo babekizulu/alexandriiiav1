@@ -1,12 +1,14 @@
 //libs
 import React, { useState, useEffect } from 'react';
 //components
-import BackBtn from '../buttons/BackBtn';
-import BrowseBtn from '../buttons/BrowseBtn';
+import BackBtn from '../../buttons/BackBtn';
+import BrowseBtn from '../../buttons/BrowseBtn';
 
 const GeoSearch = () => {
   //state management
   const [currentLocation, setCurrentLocation] = useState('locating...');
+  const [longitude, setLongitude] = useState(0);
+  const [latitude, setLatitude] = useState(0);
   //life cycle methods
   useEffect(() => {
     onCurrentLocationChange();

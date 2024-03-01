@@ -1,8 +1,8 @@
 //libs
 import React from 'react';
 //component
-import BackBtn from '../buttons/BackBtn';
-import Link from '../Link';
+import BackBtn from '../../buttons/BackBtn';
+import Link from '../../Link';
 
 const ThemeSearch = () => {
   /*

@@ -1,10 +1,10 @@
 //libs
 import React, { useState, useEffect } from 'react';
 //components
-import BackBtn from '../buttons/BackBtn';
-import Atlas from '../Atlas';
-import TimeDial from '../TimeDial';
-import DataCard from '../DataCard';
+import BackBtn from '../../buttons/BackBtn';
+import Atlas from '../../Atlas';
+import TimeDial from '../../TimeDial';
+import DataCard from '../../DataCard';
 
 const AtlasSearch = ({ upSource }) => {
   //state management

@@ -31,7 +31,7 @@ const VolumeSlider = () => {
         onDragEnd={(e) => setSliderX(e.clientX - 300)}
       ></div>
       <div className='slide-meter'></div>
-      <h3>{volume}</h3>
+      <h3 className='volume-level'>{volume}</h3>
     </div>
   );
 };

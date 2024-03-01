@@ -1,0 +1,20 @@
+@import 'utils';
+.back-btn {
+    background: $light;
+    padding: 6px 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-family: $poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: fixed;
+    top: 62px;
+    margin: 27px;
+    color: $dark;
+    cursor: pointer;
+    transition: $eio;
+    &:hover {
+        transition: $eio;
+        background: $light-active;
+    }
+}

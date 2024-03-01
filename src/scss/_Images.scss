@@ -1,0 +1,16 @@
+@import 'utils';
+.background-img-container {
+    @include centerFlex;
+    margin: auto;
+    max-width: 100%;
+    position: absolute;
+    z-index: -3;
+}
+
+.background-img {
+    width: 100%;
+    image-orientation: from-image;
+    image-rendering: optimizeQuality;
+    filter: contrast(1.25);
+    filter: brightness(0.75);
+}
