@@ -1,16 +1,17 @@
 //libs
 import React from 'react';
-//component
-import BackBtn from '../../buttons/BackBtn';
+//components
 import HomeBackgroundImg from '../home/HomeBackgroundImg';
+import BackBtn from '../../buttons/BackBtn';
 
-const GeoSearch = () => {
+const Help = () => {
   return (
     <div className='page'>
       <HomeBackgroundImg />
-      <BackBtn prevDir='/explorer' />
+      <BackBtn prevDir='/' />
+      Help
     </div>
   );
 };
 
-export default GeoSearch;
+export default Help;

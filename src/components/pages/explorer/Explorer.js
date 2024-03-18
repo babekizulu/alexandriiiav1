@@ -6,6 +6,7 @@ import BackBtn from '../../buttons/BackBtn';
 import HomeBackgroundImg from '../home/HomeBackgroundImg';
 import AtlasSVG from '../../AtlasSVG';
 import ThemeSVG from '../../ThemeSVG';
+import GeoSearchSVG from '../../GeoSearchSVG';
 
 const Explorer = () => {
   return (
@@ -20,9 +21,7 @@ const Explorer = () => {
           <ThemeSVG />
         </Link>
         <Link href='/explorer/geo-search' className='explorer-item'>
-          <header>
-            <h2>Geo-Search</h2>
-          </header>
+          <GeoSearchSVG />
         </Link>
       </div>
     </div>

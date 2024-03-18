@@ -5,6 +5,7 @@ import BackBtn from '../../buttons/BackBtn';
 import Atlas from '../../Atlas';
 import TimeDial from '../../TimeDial';
 import DataCard from '../../DataCard';
+import HomeBackgroundImg from '../home/HomeBackgroundImg';
 
 const AtlasSearch = ({ upSource }) => {
   //state management
@@ -20,6 +21,7 @@ const AtlasSearch = ({ upSource }) => {
   }, []);
   return (
     <div className='atlas-search page'>
+      <HomeBackgroundImg />
       <BackBtn prevDir='/explorer' />
       <Atlas />
       <div className='selected-continent-name-container'>

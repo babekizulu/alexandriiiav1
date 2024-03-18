@@ -3,6 +3,7 @@ import React from 'react';
 //component
 import BackBtn from '../../buttons/BackBtn';
 import Link from '../../Link';
+import HomeBackgroundImg from '../home/HomeBackgroundImg';
 
 const ThemeSearch = () => {
   /*
@@ -38,6 +39,7 @@ const ThemeSearch = () => {
   */
   return (
     <div className='theme-search page'>
+      <HomeBackgroundImg />
       <BackBtn prevDir='/explorer' />
       <div className='explorer-grid'>
         <Link

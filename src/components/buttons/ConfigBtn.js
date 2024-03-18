@@ -7,7 +7,7 @@ const ConfigBtn = ({ configType }) => {
   return (
     <div className='config-btn-container'>
       <Link href={`/configure/${configType}`} className='config-btn'>
-        configure {configType}
+        configure
       </Link>
     </div>
   );

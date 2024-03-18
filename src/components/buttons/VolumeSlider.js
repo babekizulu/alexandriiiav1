@@ -1,10 +1,9 @@
 //libs
 import React, { useState } from 'react';
 
-const VolumeSlider = () => {
+const VolumeSlider = ({ volume, volumeHandler }) => {
   //state management
   const [sliderX, setSliderX] = useState(0);
-  const [volume, setVolume] = useState(0);
   //handlers
   const onSliderDrag = (x) => {
     const initialX = x - 300;
@@ -13,7 +12,7 @@ const VolumeSlider = () => {
       sliderX <= 0
         ? Math.max(Math.floor(sliderX / 10), 0)
         : Math.min(Math.floor(sliderX / 10), 10);
-    setVolume(vol);
+    volumeHandler(vol);
   };
   return (
     <div

@@ -1,7 +1,7 @@
 //libs
 import React from 'react';
 //components
-import BackBtn from '../buttons/BackBtn';
+import BackBtn from '../../buttons/BackBtn';
 
 const Sources = ({ dir }) => {
   return (

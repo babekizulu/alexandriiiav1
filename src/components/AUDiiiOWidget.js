@@ -6,7 +6,7 @@ import ToggleSlider from './buttons/ToggleSlider';
 import ConfigBtn from './buttons/ConfigBtn';
 import VolumeSlider from './buttons/VolumeSlider';
 
-const AUDiiiOWidget = () => {
+const AUDiiiOWidget = ({ volume, volumeHandler }) => {
   return (
     <div className='audiiio-widget'>
       <ul>
@@ -17,10 +17,10 @@ const AUDiiiOWidget = () => {
           <ToggleSlider />
         </li>
         <li>
-          <ConfigBtn />
+          <ConfigBtn configType='audio' />
         </li>
         <li>
-          <VolumeSlider />
+          <VolumeSlider volume={volume} volumeHandler={volumeHandler} />
         </li>
       </ul>
     </div>

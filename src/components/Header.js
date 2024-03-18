@@ -6,10 +6,10 @@ import AUDiiiOWidget from './AUDiiiOWidget';
 import ToggleSlider from './buttons/ToggleSlider';
 import HelpBtn from './buttons/HelpBtn';
 
-const Header = () => {
+const Header = ({volume, volumeHandler}) => {
   return (
     <div className='header-container'>
-      <AUDiiiOWidget />
+      <AUDiiiOWidget volume={volume} volumeHandler={volumeHandler}/>
       <Logo />
       <ToggleSlider />
       <HelpBtn />
