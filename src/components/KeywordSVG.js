@@ -24,7 +24,7 @@ const KeywordSVG = () => {
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
-        <circle cx='115' cy='63' r='51' stroke='#131313' stroke-width='10' />
+        <circle cx='115' cy='63' r='51' stroke='#131313' strokeWidth='10' />
         <rect
           x='73.1764'
           y='89.6764'

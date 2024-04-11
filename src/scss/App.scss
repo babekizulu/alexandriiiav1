@@ -12,7 +12,7 @@
 
 body {
     @include wh100;
-    background: $dark-active;
+    background: $dark;
 }
 
 .app-container {
@@ -38,7 +38,7 @@ body {
 @import 'Sources';
 @import 'Help';
 @import 'Buttons';
-@import 'Atlas';
+@import 'AtlasSearch';
 @import 'TimeDial';
 @import 'DataCard';
 @import 'SearchBar';
